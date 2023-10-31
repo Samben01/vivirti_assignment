@@ -1,0 +1,137 @@
+.footer {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.footer_links {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  & h4 {
+    text-transform: uppercase;
+    color: #2f2f2f;
+  }
+  & ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    & li:not(:last-child) {
+      margin-bottom: 8px;
+    }
+    & li {
+      color: grey;
+      cursor: pointer;
+    }
+  }
+}
+
+.footer_icons {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  & h4 {
+    text-transform: uppercase;
+    color: #2f2f2f;
+  }
+  & ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    & li {
+      cursor: pointer;
+      padding: 0 7px;
+    }
+    & li:first-child {
+      padding-left: 0 !important;
+    }
+  }
+}
+
+.social-icons {
+  font-size: 28px;
+  color: #2f2f2f;
+}
+
+.sign_up {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  & h4 {
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  & input {
+    width: 100%;
+    padding: 12px;
+    border: grey 1.5px solid;
+    &::placeholder {
+      text-transform: uppercase;
+      font-size: 12px;
+      font-family: inherit;
+    }
+  }
+
+  & button {
+    padding: 14px 18px;
+    margin-left: 5px;
+    background-color: #2f2f2f;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    border: none;
+  }
+  & small {
+    margin-top: 5px;
+    font-family: inherit;
+    font-size: 11.5px;
+    letter-spacing: 0.5px;
+    color: grey;
+  }
+}
+
+.copyrights_text {
+  & small {
+    font-size: 14px;
+    color: grey;
+  }
+  & ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    & li a {
+      color: grey;
+      text-decoration: underline;
+    }
+    & li:not(:last-child) {
+      padding-right: 10px;
+    }
+  }
+}
+
+.sign_up_input {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .footer_container {
+    display: none;
+  }
+  .payment_container {
+    display: none;
+  }
+  .sign_up_input {
+    column-gap: 0px;
+  }
+
+  .copyrights_text {
+    text-align: center;
+    & ul {
+      justify-content: center;
+    }
+  }
+  .icons_container {
+    justify-content: space-between;
+  }
+}
