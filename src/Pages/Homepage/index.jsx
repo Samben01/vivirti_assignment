@@ -1,5 +1,5 @@
 import React from 'react';
-import PriceCard from '../../component/Card';
+import PriceCard from '../../Component/Card';
 
 import './style.scss';
 import { Pagination, Select, Spin } from 'antd';
